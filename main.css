@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+	margin: 0;
+	background-color:#080808;
+	color: #fff;
+	font-family: Monospace;
+	font-size: 13px;
+	line-height: 24px;
+	overscroll-behavior: none;
+	font-family: 'Playfair Display';
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+
+}
+                    
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+                    
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.hero{
+	width: 45vw;
+	position: absolute;
+	right: 5%;
+	top: 25%;
+	height: fit-content;
+	color: white;
+	z-index: 3;
+}
+section{
+	position: relative;
+	height: max-content;
+}
+.hero h1{
+	font-size: 3rem;
+	margin-left:5%;
+}
+.hero p{
+	
+	padding: 5%;
+	padding-top: 0;
+	font-size: 2rem;
+	font-style: oblique;
+	height: 100%;
+}
+.section_title{
+	font-size: 2.8rem;
+}
+.animate_typing{
+	transition: 2s;
+	opacity: 0;
+	filter: blur(5px);
+  }
+
+.from_bottom{
+	transform: translateY(100px);
+}
+.from_left{
+	transform: translateX(-100px);
+}
+.from_top{
+	transform: translateY(-100px);
+}
+.from_right{
+	transform: translateX(100px);
+}
+.about{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+section h1{
+	margin:5rem;
+	font-size:3rem;
+	font-style: oblique;
+	text-align: center;
+}
+.features{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	gap: 100px;
+	
+}
+.card{
+	width: 150px;
+	height: 210px;
+	background:  url('effect.png') , #F7F3E8;
+	background-size: 500% 300%;
+	filter: invert;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	color: black;
+	padding: 3%;
+	box-shadow: 0 0 200px rgba(0,0,0,0.9) inset,
+				0 0 200px rgba(255, 255, 255, 0.25);
+	background-blend-mode:multiply;
+
+}
+.card h1{
+	font-size: 2rem;
+	width: 100%;
+}
+.card p{
+	width: 100%;
+	padding: 10%;
+
+}
+.tokenomics{
+	float: left;
+	padding: 20px;
+	padding-top:5px;
+	line-height: 5ch;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 12%;
+	justify-content: center;
+}
+
+.tokenomics div{
+	font-size: 2rem;
+	width: 100%;
+}
+.tokenomics div::before{
+	content: '-';
+}
+.logo{
+	width: 350px;
+	height: 350px;
+	transform: translateY(-20px);
+	float: right;
+	background-image: url('logo.png');
+	background-size: contain;
+}
+#_3{
+	margin-top: 40%;
+}
+.roadmap{
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+}
+.roadmap div{
+	width: 50%;
+	height: 200px;
+	border: solid;
+}
+  #timeline-content {
+	margin-top: 50px;
+	text-align: center;
+  }
+  .timeline {
+	border-left: 4px solid  #d6bf7f;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	background: #f7f3e815;
+	color: rgba(252, 246, 246, 0.8);
+	margin: 50px auto;
+	letter-spacing: 0.5px;
+	position: relative;
+	line-height:1.75rem;
+	font-size: 1.03em;
+	padding: 50px;
+	list-style: none;
+	text-align: left;
+	font-weight: 100;
+	max-width: 30%;
+  }
+  .timeline h3::before{
+	content: '-';
+  }
+  .timeline h1 {
+	letter-spacing: 1.5px;
+	font-weight: 100;
+	font-size: 1.4em;
+  }
+  .timeline h2,
+  .timeline h3 {
+	letter-spacing: 1.5px;
+	font-weight: 400;
+	font-size: 1.4em;
+  }
+  .timeline .event {
+	border-bottom: 1px dashed rgba(255,255,255,0.1);
+	padding-bottom: 25px;
+	margin-bottom: 50px;
+	position: relative;
+  }
+  .timeline .event:last-of-type {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border: none;
+  }
+  .timeline .event:before,
+  .timeline .event:after {
+	position: absolute;
+	display: block;
+	top: 0;
+  }
+  .timeline .event:before {
+	left: -217.5px;
+	color: rgba(255, 255, 255, 0.4);
+	content: attr(data-date);
+	text-align: right;
+	font-weight: 100;
+	font-size: 1.5em;
+	min-width: 120px;
+  }
+  .timeline .event:after {
+	box-shadow: 0 0 0 4px #be931b;
+	left: -57.85px;
+	background: #313534;
+	border-radius: 50%;
+	height: 11px;
+	width: 11px;
+	content: "";
+	top: 5px;
+  }
+  .ongoing{
+	font-size: 1.4rem;
+	color:rgb(95, 182, 95);
+  }
+  .upcoming{
+	font-size: 1.4rem;
+	color: rgba(255, 255, 255, 0.25);
+  }
+  .phase_content{
+	font-style: oblique;
+  }
+  .phase_content::before{
+	content: '-';
+  }
+#scroll_image_container{
+	width: 100%;
+	height: 300vh;
+}
+#scroll_image{
+	position: sticky;
+	margin-top: 300px;
+	left: 0;
+	top: 0%;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	filter: sepia(100);
+	background-size: cover;
+	height:100vh;
+	transform: scale(0);
+}
+#bottom_image{
+	background: url('effect.png') , url('charles3.jpg');
+	filter: sepia(100);
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
